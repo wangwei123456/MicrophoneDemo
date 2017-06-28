@@ -14,6 +14,8 @@
 		4AB4237A1F03492400726A0E /* MicrophoneDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AB423781F03492400726A0E /* MicrophoneDemo.xcdatamodeld */; };
 		4AB4237C1F03492400726A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4237B1F03492400726A0E /* Assets.xcassets */; };
 		4AB4237F1F03492400726A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB4237D1F03492400726A0E /* LaunchScreen.storyboard */; };
+		4AB423881F034D5E00726A0E /* MicroPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB423861F034D5E00726A0E /* MicroPhoneView.m */; };
+		4AB4238A1F034F7800726A0E /* micro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AB423891F034F7800726A0E /* micro.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		4AB4237B1F03492400726A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB4237E1F03492400726A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB423801F03492400726A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB423861F034D5E00726A0E /* MicroPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroPhoneView.m; sourceTree = "<group>"; };
+		4AB423871F034D5E00726A0E /* MicroPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroPhoneView.h; sourceTree = "<group>"; };
+		4AB423891F034F7800726A0E /* micro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = micro.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 		4AB4236B1F03492300726A0E /* MicrophoneDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4AB423891F034F7800726A0E /* micro.png */,
+				4AB423871F034D5E00726A0E /* MicroPhoneView.h */,
+				4AB423861F034D5E00726A0E /* MicroPhoneView.m */,
 				4AB4236F1F03492300726A0E /* AppDelegate.h */,
 				4AB423701F03492300726A0E /* AppDelegate.m */,
 				4AB423721F03492300726A0E /* ViewController.h */,
@@ -113,6 +121,7 @@
 				TargetAttributes = {
 					4AB423681F03492300726A0E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CM4BDVY9GY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +151,7 @@
 			files = (
 				4AB4237F1F03492400726A0E /* LaunchScreen.storyboard in Resources */,
 				4AB4237C1F03492400726A0E /* Assets.xcassets in Resources */,
+				4AB4238A1F034F7800726A0E /* micro.png in Resources */,
 				4AB423771F03492400726A0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +166,7 @@
 				4AB4237A1F03492400726A0E /* MicrophoneDemo.xcdatamodeld in Sources */,
 				4AB423741F03492300726A0E /* ViewController.m in Sources */,
 				4AB423711F03492300726A0E /* AppDelegate.m in Sources */,
+				4AB423881F034D5E00726A0E /* MicroPhoneView.m in Sources */,
 				4AB4236E1F03492300726A0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +287,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CM4BDVY9GY;
 				INFOPLIST_FILE = MicrophoneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.puwell.MicrophoneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -287,10 +300,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CM4BDVY9GY;
 				INFOPLIST_FILE = MicrophoneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.puwell.MicrophoneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -313,6 +328,7 @@
 				4AB423851F03492400726A0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
