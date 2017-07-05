@@ -139,7 +139,7 @@
 - (void)updateMeters {
     [_recorder updateMeters];
     //    NSLog(@"meter:%5f", [_recorder averagePowerForChannel:0]);
-    //把音量转换成1-10之间的数字，越大声音越大
+    //把音量转换成1-10之间的数字，level越大表示声音越大
     int level=1;
     float power=[_recorder averagePowerForChannel:0];
     //暂且认为 -50是安静的 -10为最大声音 苹果取值范围  -160 - 0 有可能大于0
