@@ -1,4 +1,4 @@
 # MicrophoneDemo
 
 
-![](https://github.com/wangwei123456/MicrophoneDemo/screenshots/IMG_0789.PNG)
+![Alt Text](https://github.com/wangwei123456/MicrophoneDemo/screenshots/IMG_0789.PNG)
