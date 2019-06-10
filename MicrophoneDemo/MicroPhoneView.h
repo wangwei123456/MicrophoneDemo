@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MicroPhoneView : UIView
-//开始对讲
 - (void)start;
-//停止对讲
 - (void)stop;
-
 @end
