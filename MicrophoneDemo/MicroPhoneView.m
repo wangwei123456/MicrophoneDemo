@@ -3,7 +3,7 @@
 //  ShowMo365
 //
 //  Created by 王魏 on 2017/6/22.
-//  Copyright © 2017年 zjf. All rights reserved.
+//  Copyright © 2017年 wangwei. All rights reserved.
 //
 
 #import "MicroPhoneView.h"
@@ -119,7 +119,6 @@
                 UIAlertController * alertController=[UIAlertController alertControllerWithTitle:NSLocalizedString(@"No permission to access the microphone",nil) message:NSLocalizedString(@"Please allow access to your microphone in the settings - Privacy - microphone option",nil) preferredStyle:UIAlertControllerStyleAlert];
                 
                 UIAlertAction * okAction=[UIAlertAction actionWithTitle:NSLocalizedString(@"Go to settings",nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//                    [pwGlobal gotoLocationSetting];
                 }];
                 
                 UIAlertAction * cancelAction=[UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
@@ -138,22 +137,22 @@
 }
 - (void)updateMeters {
     [_recorder updateMeters];
-    //    NSLog(@"meter:%5f", [_recorder averagePowerForChannel:0]);
     //把音量转换成1-10之间的数字，level越大表示声音越大
-    int level=1;
+    int level = 1;
     float power=[_recorder averagePowerForChannel:0];
     //暂且认为 -50是安静的 -10为最大声音 苹果取值范围  -160 - 0 有可能大于0
-    float maxPower=-10;
-    float minPower=-50;
+    float maxPower = -10;
+    float minPower = -50;
     if (power<minPower) {
-        level=1;
+        level = 1;
     }else if (power>maxPower){
-        level=10;
+        level = 10;
     }else{
-        float per= (power+maxPower)/(minPower+maxPower);
-        level=10-[[NSString stringWithFormat:@"%.f",per*10] intValue];
+        float per = (power+maxPower)/(minPower+maxPower);
+        level = 10-[[NSString stringWithFormat:@"%.f",per*10] intValue];
     }
-    _audioStreth=level;
+    _audioStreth = level;
+    
     [self setNeedsDisplay];
 }
 

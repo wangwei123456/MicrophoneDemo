@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     MicroPhoneView * mView=[[MicroPhoneView alloc]initWithFrame:CGRectMake((self.view.bounds.size.width-150)/2, (self.view.bounds.size.height-150)/2, 150, 150)];
     [mView start];
+    
     [self.view addSubview:mView];
 }
 
