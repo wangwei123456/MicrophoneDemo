@@ -92,7 +92,7 @@
     [_recorder setMeteringEnabled:YES];
     [_recorder recordForDuration:100];//录制音频时长
 }
-- (void)startUpdateAudioStrerth{
+- (void)startUpdateAudioStreth{
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(updateMeters) userInfo:nil repeats:YES];
 }
@@ -106,7 +106,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self setupUI];
                 [self configAudio];
-                [self startUpdateAudioStrerth];
+                [self startUpdateAudioStreth];
             });
             
         }else{
@@ -152,7 +152,7 @@
         float per = (audioDecibels + maxAudioDecibels)/(minAudioDecibels + maxAudioDecibels);
         _audioStreth = 10 - [[NSString stringWithFormat:@"%.f",per*10] intValue];
     }
-    
+    //重新绘制
     [self setNeedsDisplay];
 }
 

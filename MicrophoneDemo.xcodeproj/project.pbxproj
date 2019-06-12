@@ -46,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AAA263A22B0AB2C00292D57 /* MicroPhoneView */ = {
+			isa = PBXGroup;
+			children = (
+				4AB423871F034D5E00726A0E /* MicroPhoneView.h */,
+				4AB423861F034D5E00726A0E /* MicroPhoneView.m */,
+			);
+			name = MicroPhoneView;
+			sourceTree = "<group>";
+		};
 		4AB423601F03492300726A0E = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB423891F034F7800726A0E /* micro.png */,
-				4AB423871F034D5E00726A0E /* MicroPhoneView.h */,
-				4AB423861F034D5E00726A0E /* MicroPhoneView.m */,
+				4AAA263A22B0AB2C00292D57 /* MicroPhoneView */,
 				4AB4236F1F03492300726A0E /* AppDelegate.h */,
 				4AB423701F03492300726A0E /* AppDelegate.m */,
 				4AB423721F03492300726A0E /* ViewController.h */,
@@ -131,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
